@@ -1,6 +1,6 @@
 SELECT 	unieke_klanten.maand, 
         concat(mdw.voorletters, " ", mdw.naam) as verkoper, 
-		count(unieke_klanten.klantnummer) as nieuwe_klanten
+	count(unieke_klanten.klantnummer) as nieuwe_klanten
 FROM
 (
 	SELECT 	distinct klantnummer,
